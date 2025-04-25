@@ -52,8 +52,10 @@ I used Remix IDE for contract development and deployment, and Ethereum Holesky t
 ## Repository Structure
 
 ```
+.
 ├── README.md                  # Project overview and technical documentation
-├── SamerV42Token.sol          # ERC20 token implementation
+├── code                       # Source code directory
+│   └── SamerV42Token.sol      # ERC20 token implementation
 ├── deployment                 # Deployment information
 │   └── README.md              # Deployment instructions
 └── documentation              # Detailed documentation
