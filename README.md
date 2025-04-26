@@ -1,4 +1,4 @@
-# SamerV42Token Project
+# Tokenizer Project
 
 ## Overview
 
@@ -38,22 +38,13 @@ _Rationale_: Created to demonstrate secure token management for organizational u
       │   ├── SamerV42Token.sol                      # Basic implementation
       │   └── SamerV42TokenMultisig.sol              # Multisignature implementation
       ├── deployment/
-      │   ├── SamerV42Token_DEPLOYMENT.md            # How to use basic implementation
-      │   └── SamerV42TokenMultisig_DEPLOYMENT.md    # How to use multisig implementation
+      │   ├── SamerV42Token_DEPLOYMENT.md            # How to deploy basic implementation
+      │   └── SamerV42TokenMultisig_DEPLOYMENT.md    # How to deploy multisig implementation
       ├── documentation/
       │   ├── SamerV42Token_USAGE.md                 # How to use basic implementation
       │   └── SamerV42TokenMultisig_USAGE.md         # How to use multisig implementation
       └── README.md                                  # This file
 ```
-
-## Getting Started
-
-### Prerequisites
-
-- Web browser
-- MetaMask or similar Ethereum wallet extension
-- ETH for gas fees on your chosen network
-- Basic understanding of Ethereum transactions
 
 ### Implementation Choices
 
@@ -63,9 +54,7 @@ This project offers two different token implementations to demonstrate the spect
 
 2. **Multisignature Implementation**: An advanced token with enhanced governance features. This implementation requires multiple signatures to authorize transfers, making it more suitable for:
    - Projects requiring shared control
-   - DAOs and community-governed tokens
    - High-value tokens where security is paramount
-   - Organizations with multiple stakeholders
 
 The multisig implementation stores all tokens within the contract itself rather than assigning them to a single owner, requiring a consensus-based approach for any token movement.
 
@@ -102,15 +91,14 @@ For detailed deployment instructions, refer to:
 
 For detailed usage instructions:
 
-- Basic implementation: [BASIC_TOKEN_USAGE.md](./documentation/BASIC_TOKEN_USAGE.md)
-- Multisig implementation: [MULTISIG_TOKEN_USAGE.md](./documentation/MULTISIG_TOKEN_USAGE.md)
+- Basic implementation: [SamerV42Token_USAGE.md](./documentation/SamerV42Token_USAGE.md)
+- Multisig implementation: [SamerV42TokenMultisig_USAGE.md](./documentation/SamerV42TokenMultisig_USAGE.md)
 
 ## Security Considerations
 
 - The basic implementation centralizes control with the deployer
 - The multisig implementation distributes control among multiple owners
 - Always deploy to a testnet first before using in production
-- For production use, consider a professional smart contract audit
 
 ## Development Environment
 
@@ -120,7 +108,3 @@ This project was developed using https://remix.ethereum.org/, which offers:
 - Integrated compilation and deployment
 - Easy interaction with deployed contracts
 - Support for importing OpenZeppelin contracts
-
-## License
-
-This project is licensed under the MIT License - see the contracts for license information.

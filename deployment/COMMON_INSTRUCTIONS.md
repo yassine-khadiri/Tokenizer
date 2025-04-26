@@ -8,21 +8,21 @@ These instructions apply to both Basic and Multisig versions of SamerV42Token.
 2. **Wallet Setup**:
    - Install MetaMask or similar Ethereum wallet extension
    - Add Holesky Testnet:  
-     https://revoke.cash/learn/wallets/add-network/ethereum-holesky
+    [Holesky Network Configuration Guide](https://revoke.cash/learn/wallets/add-network/ethereum-holesky)
 3. **Test ETH**:
    - Get free Holesky ETH for gas fees:  
-     https://cloud.google.com/application/web3/faucet/ethereum/holesky
+    [Holesky Faucet](https://cloud.google.com/application/web3/faucet/ethereum/holesky)
 
 ## Common Steps
 
 ### 1. Access Remix IDE
 
-1. Open your web browser and navigate to https://remix.ethereum.org/
+1. Open your web browser and navigate to [Remix Ethereum IDE](https://remix.ethereum.org/)
 2. You'll see the default workspace with some example files
 
 ### 2. Create Contract File
 
-1. In the File Explorer panel (left side), create a new file in the contracts folder
+1. In the File Explorer panel (left side), create a new file named (SamerV42Token.sol or SamerV42TokenMultisig.sol) inside contracts folder
 
 ### 3. Add the Contract Code
 
@@ -47,14 +47,30 @@ These instructions apply to both Basic and Multisig versions of SamerV42Token.
 
 Now continue with the specific deployment instructions for your chosen version:
 
-- For **Basic Token**: Proceed with [SamerV42Token_BASIC_DEPLOYMENT.md](SamerV42Token_DEPLOYMENT.md)
-- For **Multisig Token**: Proceed with [SamerV42Token_MULTISIG_DEPLOYMENT.md](SamerV42TokenMULTISIG_DEPLOYMENT.md)
+- For **Basic Token**: Proceed with [SamerV42Token_DEPLOYMENT.md](SamerV42Token_DEPLOYMENT.md)
+- For **Multisig Token**: Proceed with [SamerV42TokenMultisig_DEPLOYMENT.md](SamerV42TokenMultisig_DEPLOYMENT.md)
 
 ## Verification (After Deployment)
 
-1. After deployment, note the contract address
-2. Go to https://holesky.etherscan.io/
+#### Method 1: Remix Etherscan Plugin (Recommended)
+
+[![Step-by-Step Video Guide](https://img.youtube.com/vi/hEJ1OlT8jQ4/0.jpg)](https://www.youtube.com/watch?v=hEJ1OlT8jQ4)
+
+_Benefits_:
+
+- Handles constructor arguments automatically
+- Directly connects to your deployed contract
+- No manual file uploads required
+
+#### Method 2: Manual Etherscan Verification
+
+**Steps**:
+
+1. Note your contract address after deployment
+2. Go to [Holesky Etherscan](https://holesky.etherscan.io/)
 3. Search for your contract address
-4. Click on the "Contract" tab
-5. Click "Verify and Publish"
-6. Follow the instructions to verify your source code
+4. Click the "Contract" tab → "Verify and Publish"
+5. Select:
+   - Compiler type: Solidity (Single/Multi-File)
+   - Compiler version (must match!)
+6. Upload source files
