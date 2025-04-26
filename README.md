@@ -62,7 +62,7 @@ The multisig implementation stores all tokens within the contract itself rather 
 
 #### Step 1: Deploy Your Token
 
-1. Open https://remix.ethereum.org/
+1. Open [Remix Ethereum IDE](https://remix.ethereum.org/)
 2. Create a new Solidity file
 3. Copy the contract code from either:
    - `code/SamerV42Token.sol` (basic implementation)
@@ -102,7 +102,7 @@ For detailed usage instructions:
 
 ## Development Environment
 
-This project was developed using https://remix.ethereum.org/, which offers:
+This project was developed using [Remix Ethereum IDE](https://remix.ethereum.org/), which offers:
 
 - Web-based accessibility
 - Integrated compilation and deployment
