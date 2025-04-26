@@ -25,16 +25,7 @@ This guide provides step-by-step instructions for deploying the basic version of
 3. Copy the contract address (click the copy icon)
 4. Save this address - you'll need it to interact with your token
 
-## Step 4: Confirm Token Details
-
-To verify everything worked properly:
-
-1. Call the `name()` function - should return "SamerV42"
-2. Call the `symbol()` function - should return "SV42"
-3. Call the `totalSupply()` function - should return 1337000000000000000000 (1337 with 18 decimals)
-4. Call the `balanceOf()` function with your wallet address - should show you own all tokens
-
-## Step 5: Add to MetaMask
+## Step 4: Add to MetaMask
 
 To see your tokens in MetaMask:
 
@@ -42,7 +33,7 @@ To see your tokens in MetaMask:
 2. Scroll down and click "Import tokens"
 3. Enter your token contract address
 4. The "Token Symbol" and "Decimals" should auto-populate
-5. Click "Add Custom Token" then "Import Tokens"
+5. Click "Next" then "Import"
 
 ## Next Steps
 

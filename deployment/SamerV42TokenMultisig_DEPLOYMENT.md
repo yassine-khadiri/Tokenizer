@@ -43,16 +43,6 @@ Example scenarios:
 3. Copy the contract address (click the copy icon)
 4. Save this address - you'll need it to interact with your token
 
-## Step 5: Confirm Contract Setup
-
-To verify everything worked properly:
-
-1. Call the `name()` function - should return "SamerV42"
-2. Call the `symbol()` function - should return "SV42"
-3. Call the `balanceOf()` function with the contract's own address - should show 1337000000000000000000 (all tokens)
-4. Call the `owners(0)` function - should return the first owner address
-5. Call the `numConfirmationsRequired()` function - should return your chosen threshold
-
 ## Next Steps
 
 Now that your multisig SamerV42Token is deployed, refer to [SamerV42TokenMultisig_USAGE.md](../documentation/SamerV42TokenMultisig_USAGE.md) for instructions on how to use your token.
