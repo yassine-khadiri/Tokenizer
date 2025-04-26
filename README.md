@@ -2,31 +2,33 @@
 
 ## Overview
 
-SamerV42Token is an ERC20-compliant token built on Ethereum with two distinct implementations:
+SamerV42Token is an ERC20-compliant token with two implementations demonstrating different security and control paradigms:
 
-1. **Basic Token Implementation** - A standard ERC20 token with a fixed supply of 1337 tokens
-2. **Multisignature Token Implementation** - An enhanced version with security features requiring multiple approvals for transfers
+1. **Basic Implementation**: Standard ERC20 token with fixed supply (1337 tokens)
+2. **Multisignature Implementation**: Enhanced version requiring multiple approvals for transfers
 
-This project demonstrates Solidity smart contract development with a focus on security and proper implementation of the ERC20 standard.
+## Implementation Decisions
 
-## Features
+### 1. Basic Token Design Choices
 
-### Basic Implementation
+- **Fixed Supply**: 1337 tokens (demonstrating finite supply concept)
+- **18 Decimals**: Standard ERC20 precision for broad compatibility
+- **Explicit Ownership**: All tokens minted to deployer for simplicity
+- **Minimal Functions**: Strictly ERC20 compliant without extensions
 
-- Standard ERC20 functionality
-- Token Name: SamerV42
-- Token Symbol: SV42
-- Total Supply: 1337 tokens
-- Decimals: 18
-- All tokens initially minted to the deployer's address
+_Rationale_: Designed as a reference implementation showing the most basic compliant ERC20 token.
 
-### Multisig Implementation
+### 2. Multisig Implementation Choices
 
-- ERC20 compliance with enhanced security
-- Multi-owner control for token transfers
-- Configurable confirmation threshold
-- Transparent transaction proposal and confirmation process
-- All tokens initially minted to the contract itself
+- **Contract-held Tokens**: All tokens remain in contract custody
+- **Configurable Governance**:
+  - Dynamic owner set (3 default owners in implementation)
+  - Adjustable confirmation threshold (2/3 default)
+- **Transaction Lifecycle**:
+  - Clear submit → confirm → execute flow
+  - Full transaction visibility
+
+_Rationale_: Created to demonstrate secure token management for organizational use.
 
 ## Project Structure
 
