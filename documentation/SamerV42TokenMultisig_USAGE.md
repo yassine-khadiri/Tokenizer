@@ -14,10 +14,9 @@ The multisig implementation requires multiple approvals before any token transfe
 2. Call the `symbol()` function - should return "SV42"
 3. Call the `balanceOf()` function with the contract's own address - should show 1337000000000000000000 (all tokens)
 4. Call `owners(index)` to view each owner address (start from index 0)
-5. Call the `numConfirmationsRequired()` function - should return your chosen threshold
+5. Call `numConfirmationsRequired` to see how many approvals are needed for transfers
 6. Call `isOwner(address)` to check if a specific address is an owner
-7. Call `numConfirmationsRequired` to see how many approvals are needed for transfers
-8. Call `totalSupply()` to confirm the total supply (1337 \* 10^18)
+7. Call `totalSupply()` to confirm the total supply (1337 * 10^18)
 
 ## Standard Token Functions
 
@@ -138,12 +137,6 @@ After execution:
 Error message: "Caller is not an owner"
 
 - Solution: Switch to an address that was defined as an owner during contract deployment
-
-### Transaction Doesn't Exist
-
-Error message: "Transaction does not exist"
-
-- Solution: Verify the transaction index is correct and within range
 
 ### Already Executed
 
