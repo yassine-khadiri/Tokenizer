@@ -7,6 +7,18 @@ SamerV42Token is an ERC20-compliant token with two implementations demonstrating
 1. **Basic Implementation**: Standard ERC20 token with fixed supply (1337 tokens)
 2. **Multisignature Implementation**: Enhanced version requiring multiple approvals for transfers
 
+## Language Choice
+
+**Solidity** Selected for its:
+
+Native Ethereum Virtual Machine (EVM) compatibility
+
+Mature tooling (Remix, Hardhat, Foundry)
+
+Secure arithmetic operations (built-in overflow checks)
+
+Industry-wide adoption for smart contracts
+
 ## Implementation Decisions
 
 ### 1. Basic Token Design Choices
